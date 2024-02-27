@@ -1,6 +1,7 @@
 /** @format */
 
 const express = require("express");
+const log = require("./log.js");
 
 const app = express();
 
@@ -11,5 +12,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(5000, (req, res) => {
-  console.log("server is running on port 5000");
+  console.log("server in port 5000");
 });
